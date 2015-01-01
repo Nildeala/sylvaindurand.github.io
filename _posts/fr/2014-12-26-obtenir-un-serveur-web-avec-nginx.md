@@ -23,6 +23,12 @@ Il est alors possible de démarrer manuellement *Nginx* avec :
 systemctl start nginx
 ```
 
+Pour qu'il se lance automatiquement au démarrage, on utilise :
+
+```bash
+systemctl enable nginx
+```
+
 En ouvrant l'adresse IP[[ou le nom de domaine qui pointe vers votre Raspberry Pi]] de votre Raspberry Pi, vous devriez alors voir apparaître une page attestant que *Nginx* est bien fonctionnel. 
 
 ## Site statique
@@ -80,7 +86,11 @@ On active alors celui-ci :
 systemctl start php-fpm
 ```
 
+Pour qu'il se lance automatiquement au démarrage, on utilise :
 
+```bash
+systemctl enable php-fpm
+```
 
 ### Création d'un site avec PHP
 
